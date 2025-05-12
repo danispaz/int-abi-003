@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">B.I. - Horas de Treinamento
+
+
+
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+É um serviço de capacitação prática que ensina equipes a criar e gerenciar seus próprios dashboards no Power BI, promovendo autonomia na análise de dados e permitindo uma cultura mais analítica, com decisões baseadas em informações claras e acessíveis.
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">ABI003</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Inteligência de Dados</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-question-circle icon"></i>Classificação BCG</label>
+      <div class="form-value">Ponto de Interrogação</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ol data-start="609" data-end="1155">
+<li data-start="609" data-end="719" class="">
+<p data-start="612" data-end="719" class="">Alinhamento inicial com o cliente para entender o perfil dos participantes e os objetivos do treinamento.</p>
+</li>
+<li data-start="720" data-end="839" class="">
+<p data-start="723" data-end="839" class="">Planejamento do conteúdo programático de acordo com o nível dos participantes (básico, intermediário ou avançado).</p>
+</li>
+<li data-start="840" data-end="927" class="">
+<p data-start="843" data-end="927" class="">Treinamento prático e interativo, com exercícios aplicados à realidade do cliente.</p>
+</li>
+<li data-start="928" data-end="993" class="">
+<p data-start="931" data-end="993" class="">Demonstração de criação de painéis e dashboards em Power BI.</p>
+</li>
+<li data-start="994" data-end="1083" class="">
+<p data-start="997" data-end="1083" class="">Capacitação para manipulação de dados, criação de fórmulas, filtros e visualizações.</p>
+</li>
+<li data-start="1084" data-end="1155" class="">
+<p data-start="1087" data-end="1155" class="">Suporte pós-treinamento para esclarecer dúvidas dos participantes.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ul data-start="1199" data-end="1537">
+<li data-start="1199" data-end="1274" class="">
+<p data-start="1201" data-end="1274" class="">Falta de conhecimento técnico para utilizar o Power BI de forma eficaz.</p>
+</li>
+<li data-start="1275" data-end="1339" class="">
+<p data-start="1277" data-end="1339" class="">Dificuldade em criar relatórios e dashboards personalizados.</p>
+</li>
+<li data-start="1340" data-end="1402" class="">
+<p data-start="1342" data-end="1402" class="">Dependência de terceiros para gerar análises e relatórios.</p>
+</li>
+<li data-start="1403" data-end="1473" class="">
+<p data-start="1405" data-end="1473" class="">Erros na interpretação de dados por desconhecimento da ferramenta.</p>
+</li>
+<li data-start="1474" data-end="1537" class="">
+<p data-start="1476" data-end="1537" class="">Baixa eficiência na análise de dados e geração de insights.</p>
+</li>
+</ul>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ul data-start="1570" data-end="1870">
+<li data-start="1570" data-end="1622" class="">
+<p data-start="1572" data-end="1622" class="">Autonomia na criação e gestão de painéis de B.I.</p>
+</li>
+<li data-start="1623" data-end="1696" class="">
+<p data-start="1625" data-end="1696" class="">Melhoria na tomada de decisões com base em dados claros e confiáveis.</p>
+</li>
+<li data-start="1697" data-end="1749" class="">
+<p data-start="1699" data-end="1749" class="">Redução do tempo gasto na criação de relatórios.</p>
+</li>
+<li data-start="1750" data-end="1808" class="">
+<p data-start="1752" data-end="1808" class="">Capacitação prática e adaptada à realidade do cliente.</p>
+</li>
+<li data-start="1809" data-end="1870" class="">
+<p data-start="1811" data-end="1870" class="">Aumento da produtividade e agilidade na análise de dados.</p>
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ul data-start="1907" data-end="2410">
+<li data-start="1907" data-end="2008" class="">
+<p data-start="1909" data-end="2008" class="">Empresas que já utilizam Power BI, mas possuem dificuldades em explorar todas as funcionalidades.</p>
+</li>
+<li data-start="2009" data-end="2114" class="">
+<p data-start="2011" data-end="2114" class="">Clientes que desejam capacitar suas equipes para criar relatórios e dashboards de forma independente.</p>
+</li>
+<li data-start="2115" data-end="2217" class="">
+<p data-start="2117" data-end="2217" class="">Durante ou após a implementação de painéis de B.I. (para garantir que a equipe saiba utilizá-los).</p>
+</li>
+<li data-start="2218" data-end="2308" class="">
+<p data-start="2220" data-end="2308" class="">Para empresas que desejam otimizar a análise de dados e melhorar a tomada de decisões.</p>
+</li>
+<li data-start="2309" data-end="2410" class="">
+<p data-start="2311" data-end="2410" class="">Para clientes que possuem alta rotatividade de colaboradores e precisam capacitar novos usuários.</p>
+</li>
+</ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Oferecemos treinamento prático e personalizado em Power BI, capacitando as equipes para criar, gerenciar e interpretar painéis de indicadores de forma autônoma. Com isso, garantimos que o cliente obtenha o máximo valor da ferramenta, transformando dados em insights estratégicos e otimizando a tomada de decisões.
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>Consultoria Empresarial - Planejamento Estratégico</td>
+            <td>Uso de painéis para monitorar indicadores estratégicos.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Resultados Financeiros</td>
+            <td>Relatórios financeiros e DRE em Power BI.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Diagnóstico Empresarial</td>
+            <td>Treinamento para análise de indicadores do diagnóstico.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Planejamento Orçamentário e Fluxo de Caixa</td>
+            <td>Painéis para controle e monitoramento de fluxo de caixa.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Valuation</td>
+            <td>Análise financeira e de desempenho com suporte do Power BI.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Estoque</td>
+            <td>Painéis de controle e gestão de estoque.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Auditoria Operacional</td>
+            <td>Uso de dashboards para monitorar processos.</td>
+            <td>Auditoria</td>
+        </tr>
+        <tr>
+            <td>Auditoria Financeira</td>
+            <td>Verificação e análise dos relatórios gerados.</td>
+            <td>Auditoria</td>
+        </tr>
+        <tr>
+            <td>Compliance Trabalhista e Previdenciária</td>
+            <td>Análise de conformidade com suporte visual.</td>
+            <td>Consultoria Trabalhista</td>
+        </tr>
+        <tr>
+            <td>Gestão de Indicadores de Performance (KPI)</td>
+            <td>Monitoramento e visualização dos KPIs definidos.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real, Lucro Presumido </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Indefinido (Pode atender empresas de diversos portes).</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ul data-start="4728" data-end="5034">
+<li data-start="4728" data-end="4807" class="">
+<p data-start="4730" data-end="4807" class="">Alinhamento inicial com o cliente para entender o perfil dos participantes.</p>
+</li>
+<li data-start="4808" data-end="4868" class="">
+<p data-start="4810" data-end="4868" class="">Lista de participantes (nome, área de atuação e e-mail).</p>
+</li>
+<li data-start="4869" data-end="4941" class="">
+<p data-start="4871" data-end="4941" class="">Identificação dos objetivos e temas prioritários para o treinamento.</p>
+</li>
+<li data-start="4942" data-end="4999" class="">
+<p data-start="4944" data-end="4999" class="">Verificação do acesso ao Power BI e versão utilizada.</p>
+</li>
+<li data-start="5000" data-end="5034" class="">
+<p data-start="5002" data-end="5034" class="">Material de apoio (se houver).</p>
+</li>
+</ul>
+</div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ul data-start="5094" data-end="5324">
+<li data-start="5094" data-end="5154" class="">
+<p data-start="5096" data-end="5154" class="">Empresas que utilizam Power BI ou desejam implementá-lo.</p>
+</li>
+<li data-start="5155" data-end="5229" class="">
+<p data-start="5157" data-end="5229" class="">Organizações que desejam capacitar suas equipes para análise de dados.</p>
+</li>
+<li data-start="5230" data-end="5324" class="">
+<p data-start="5232" data-end="5324" class="">Empresas de transporte, comércio, indústria, saúde, tecnologia, consultoria, entre outros.</p>
+</li>
+</ul>      </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nossa equipe já tem algum conhecimento em Power BI.</td>
+            <td>Acredita que o treinamento será básico.</td>
+            <td>Esclarecer que o conteúdo é adaptável ao nível da equipe.</td>
+        </tr>
+        <tr>
+            <td>É difícil de usar?</td>
+            <td>Medo de que o Power BI seja complicado.</td>
+            <td>Garantir que o treinamento é prático e direto.</td>
+        </tr>
+        <tr>
+            <td>Não temos tempo para treinamento.</td>
+            <td>Rotina ocupada dos participantes.</td>
+            <td>Oferecer treinamento flexível (online e gravado).</td>
+        </tr>
+        <tr>
+            <td>É muito caro para um treinamento.</td>
+            <td>Preocupação com o investimento.</td>
+            <td>Demonstrar que o retorno é imediato com aumento de eficiência.</td>
+        </tr>
+        <tr>
+            <td>O Power BI é muito complexo.</td>
+            <td>Percepção de que a ferramenta é complicada.</td>
+            <td>Mostrar que o treinamento é dividido em módulos claros.</td>
+        </tr>
+        <tr>
+            <td>Precisamos de algo mais avançado.</td>
+            <td>Acredita que o treinamento será básico.</td>
+            <td>Garantir que o conteúdo é adaptado ao nível da equipe.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                                               <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> CEO, CFO, Diretor de Operações, Diretor Financeiro.</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional oferece o serviço de B.I. – Horas de Treinamento com capacitação prática, abordagem didática e atendimento consultivo, garantindo que o cliente desenvolva autonomia na criação e gestão de dashboards no Power BI.
+
+Nosso diferencial está na metodologia prática, que combina teoria e exercícios reais, ensino de conceitos essenciais de BI, design de dashboards, criação de relatórios interativos e boas práticas de visualização de dados, assegurando competência, clareza e autonomia para as equipes.
+
+
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
